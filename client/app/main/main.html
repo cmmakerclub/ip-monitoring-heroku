@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">Addresses</h1>
+        <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Lease time</th>
+                  <th>IP Address</th>
+                  <th>Device</th>
+                  <th>Last update</th>
+                </tr> 
+              </thead>
+              <tboday>
+                <tr ng-repeat="thing in awesomeThings">
+                  <td>{{ thing.leases_time | momentDate}}</td>
+                  <td>{{ thing.ip }}</td>
+                  <td>{{ thing.name }}</td>
+                  <td>{{ thing.updated_at | timeAgo }}</td>
+                </tr>
+              </tboday>
+
+            </table>
+        </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+      <p><a href="http://cmmakerclub.com">Chiang Mai Maker Club</a></p>
+  </div>
+</footer>
+
